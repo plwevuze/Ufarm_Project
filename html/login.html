@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Form Validation</title>
+
+    <link rel="stylesheet" href="/bootstrap-5.2.0/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <!-- ##############****************** NAVBAR ****************############# -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg bg-light">
+                        <div class="container-fluid" id="nn">
+                            <img src="/images/ufarm logo.png" alt="logo" class="img-logo">
+                            <a class="navbar-brand" id="ufar" href="home.html">Ufarm</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="/html/home.html">HOME</a>
+                                    </li>
+
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Products & Services
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/HOME_PAGE/uploads.html">Upload
+                                                    produce</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">#</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                            </li> -->
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Career</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact Us</a>
+                                    </li>
+                                    <li class="nav-item dropdown" id="lft">
+                                        <a class="nav-link dropdown-toggle" id="accounts" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Acounts
+                                        </a>
+                                        <ul class="dropdown-menu" id="acc">
+                                            <li><a class="dropdown-item" href="login.html">login</a></li>
+                                            <li><a class="dropdown-item" href="register.html">Sign Up</a></li>
+
+                                        </ul>
+
+                                    </li>
+
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </nav>
+    </header>
+    <div class="container">
+        <form action="/register" method="post" class="form" id="signup" name="registration">
+            <h1>Login Form</h1>
+           
+            <div class="row g-3">
+                <div class="col">
+                    <div class="form-field">
+                        <label for="username">username/id:</label>
+                        <input type="text" name="patientname" autocomplete="off" id="patientname" placeholder="name" />
+                        <small></small>
+                    </div>
+                </div>
+                
+
+                    <div class="row g-3">
+                        <div class="form-field">
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" autocomplete="off" id="password" required />
+                            <small></small>
+                        </div>
+
+                       
+
+                        <div class="form-field">
+                            <input type="submit" class="btn" id="submit" value="Register" />
+                            <!-- onclick="checkPatientName(),checkOtherName(),checkNin(), 
+                                    checkAge(),checkWeight(),checkAddress(), checkDistrict (), checkEmail(),
+                                    checkTelephone(), checkTelephone1(),  checkPassword(),
+                                    checkConfirmPassword(), checkOccupation(), checkRelationship()"  -->
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="./forms.js"></script>
+
+</html>
